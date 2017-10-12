@@ -1,0 +1,154 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper{
+    border: 2px solid;
+    text-align: center;
+    background: rgba(0,0,0, .7);
+    color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    padding: 15px;
+}
+h1,
+h3 {
+    font-weight: 200;
+}
+
+h1 {
+    margin: 0px;
+    text-shadow: 0 1px 5px rgba(000, 000, 000, 0.1);
+}
+
+h3 {
+    margin: 7px 0 15px 0;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 1px 3px rgba(000, 000, 000, 0.1);
+    width: 50%;
+    margin: 50px auto 20px auto;
+    border-radius: 5px;
+    padding:15px;
+}
+
+.wi {
+    font-size: 500%;
+    color: #fff;
+    text-shadow: 0 1px 5px rgba(000, 000, 000, 0.1);
+}
+
+.unit {
+    text-align: right;
+    margin-bottom: 0px;
+}
+
+.temp p:first-child {
+    font-size: 350%;
+    margin: 10px 0;
+    text-shadow: 0 1px 5px rgba(000, 000, 000, 0.1);
+}
+
+.temp p:last-child {
+    font-weight: 300;
+    margin: 10px 0 50px 0;
+}
+
+.weather p {
+    margin-top: 20px;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+}
+
+.weather p:first-of-type {
+    font-size: 115%;
+}
+
+.btn{
+    cursor: pointer;
+}
+.btn-dark{
+    border-color: #fff!important;
+}
+.degree {
+    font-weight: 200;
+}
+.feels {
+    font-size: 90%;
+}
+
+.creds {
+    font-size: 60%;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*   XXXXXXXXXX CHECK BOX STYLES XXXXXXXXXXXXXXx  */
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    right: 25px;
+    top: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: rgba(000, 000, 000, 0.3);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

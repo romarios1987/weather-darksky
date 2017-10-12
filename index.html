@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <title>Weather API - Dark Sky API</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 ml-auto mr-auto">
+            <div class="wrapper">
+                <div class="unit">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span id="cToF" class="slider round"></span>
+                    </label>
+                </div>
+                <div class="location">
+                    <h1 id="location">--</h1>
+                    <h3 id="currDate">---</h3>
+                </div>
+                <div class="temp">
+                    <p><span id="real-temp">--</span><span class="degree"></span></p>
+                    <p class="feels">Feels like: <span id="feels-temp">--</span></p>
+                </div>
+                <div>
+                    <canvas id="icon1" width="150" height="150"></canvas>
+                </div>
+                <div class="weather">
+                    <p id="weather-type">---</p>
+                    <p id="weather-summ">--</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button type="button" id="prew" class="btn btn-dark btn-block">day before</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button type="button" id="next" class="nextday btn btn-dark btn-block">next day</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
