@@ -6,18 +6,16 @@ var prevTime = new Date(today.getFullYear(), today.getMonth(), today.getDate() -
 var initializeLoc = function initializeLoc() {
     $.ajax({
         type: "GET",
-        url: "http://ip-api.com/json",
+        url: "https://ipinfo.io/json/",
         success: getLocation
     });
 };
 
 function getLocation(res) {
-    var city = res.city;
+    var region = res.region;
     var country = res.country;
-    var location = country + ', ' + city;
-    var latitude = res.lat;
-    var longitude = res.lon;
-    var latLong = latitude + "," + longitude;
+    var location = region + "," + country;
+    var latLong = res.loc;
     setLocation(location, latLong);
     if (today) document.querySelector(".nextday").classList.add('disabled');
 
